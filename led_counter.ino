@@ -24,10 +24,10 @@ void loop() {
   for(int i = 0; i<LED_PIN_OUT_LEN; i++) {
       int curPin = LED_PIN_OUT[i];
     if (numOn > i) {
-      digitalWrite(curPin, HIGH);  
+      analogWrite(curPin, 255);  
     }
     else {
-      digitalWrite(curPin, LOW);
+      analogWrite(curPin, 0);
     }
   }
   
